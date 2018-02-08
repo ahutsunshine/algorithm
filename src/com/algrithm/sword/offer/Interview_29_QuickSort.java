@@ -1,4 +1,4 @@
-package com.algrithm.sort;
+package com.algrithm.sword.offer;
 
 import java.util.Arrays;
 import java.util.Random;
@@ -6,7 +6,7 @@ import java.util.Random;
 /**
  * @author Kevin Yao
  */
-public class QuickSort {
+public class Interview_29_QuickSort {
     public static void main(String[] args) {
         int[] a = {4, 2, 2, 3, 2, 1, 2, 8, 2};
         quickSort(a, 0, a.length - 1);
