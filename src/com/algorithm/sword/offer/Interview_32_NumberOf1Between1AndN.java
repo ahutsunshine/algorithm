@@ -1,6 +1,9 @@
-package com.algrithm.sword.offer;
+package com.algorithm.sword.offer;
 
-public class Interview32_NumberOf1Between1AndN {
+/**
+ * @author Kevin Yao
+ */
+public class Interview_32_NumberOf1Between1AndN {
     public static void main(String[] args) {
         int n = 1000;
         int result1 = numberOf1Between1AndN_String(n);

@@ -1,4 +1,4 @@
-package com.algrithm.sword.offer;
+package com.algorithm.sword.offer;
 
 import java.util.Arrays;
 import java.util.Random;

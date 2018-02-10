@@ -1,9 +1,9 @@
-package com.algrithm.sword.offer;
+package com.algorithm.sword.offer;
 
 /**
  * @author Kevin Yao
  */
-public class Interview31_GreatestSubArraySum {
+public class Interview_31_GreatestSubArraySum {
     public static void main(String[] args) {
         int[] a = {1, -2, 3, 10, -4, 7, 2, -5};
         System.out.println(getGreatestSubArraySum(a));
