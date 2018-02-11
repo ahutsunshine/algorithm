@@ -15,7 +15,7 @@ public class Interview_38_GetNumberOfK {
             return 0;
         }
         int firstKIndex = getFirstKPosition(a, k);
-        int lastKIndex = getLastKPostion(a, k);
+        int lastKIndex = getLastKPosition(a, k);
         if (firstKIndex <= -1 || lastKIndex <= -1) {
             return 0;
         }
@@ -44,7 +44,7 @@ public class Interview_38_GetNumberOfK {
         return -1;
     }
 
-    private static int getLastKPostion(int[] a, int k) {
+    private static int getLastKPosition(int[] a, int k) {
         int middle;
         int left = 0;
         int right = a.length - 1;
