@@ -5,7 +5,7 @@ import com.algorithm.entity.ListNode;
 /**
  * @author Kevin Yao
  */
-public class Interview_36_FindFirstCommonNode {
+public class Interview_37_FindFirstCommonNode {
     public static void main(String[] args) {
         ListNode node1 = new ListNode(1);
         ListNode node2 = new ListNode(2);
