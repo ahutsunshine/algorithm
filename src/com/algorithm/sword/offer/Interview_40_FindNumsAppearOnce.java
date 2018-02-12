@@ -3,7 +3,7 @@ package com.algorithm.sword.offer;
 /**
  * @author Kevin Yao
  */
-public class Interview_39_FindNumsAppearOnce {
+public class Interview_40_FindNumsAppearOnce {
     public static void main(String[] args) {
         int[] values = {2, 4, 3, 6, 3, 2, 5, 5};
         int[] nums = findNumsAppearOnce(values);
