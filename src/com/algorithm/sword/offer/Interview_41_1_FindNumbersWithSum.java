@@ -3,7 +3,7 @@ package com.algorithm.sword.offer;
 /**
  * @author Kevin Yao
  */
-public class Interview_41_FindNumbersWithSum {
+public class Interview_41_1_FindNumbersWithSum {
     public static void main(String[] args) {
         int[] values = {1, 2, 3, 5, 8, 9,};
         int[] result = findNumbersWithSum(values, 8);
