@@ -6,12 +6,12 @@ package com.algorithm.sword.offer;
 public class Interview_46_SumOf1ToN {
     public static void main(String[] args) {
         int n = 10;
-        System.out.println(sumSolution1(n));
+        System.out.println(sumSolution(n));
     }
 
-    private static int sumSolution1(int n) {
+    private static int sumSolution(int n) {
         int sum = n;
-        boolean status = (n > 0) && ((sum += sumSolution1(n - 1)) > 0);
+        boolean status = (n > 0) && ((sum += sumSolution(n - 1)) > 0);
         return sum;
     }
 
