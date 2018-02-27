@@ -4,7 +4,7 @@ package com.algorithm.singleton;
  * @author Kevin Yao
  */
 public class SingletonLazyDoubleLockCheck {
-    private static SingletonLazyDoubleLockCheck singleton;
+    private volatile static SingletonLazyDoubleLockCheck singleton;
 
     private SingletonLazyDoubleLockCheck() {
     }
