@@ -20,14 +20,14 @@ public class Str2Int {
             throw new NullPointerException();
         }
         int len = s.length();
-        boolean negtive = false;
-        char[] digits = s.toCharArray();
+        boolean negative = false;
+        char[] digits = s.trim().toCharArray();
         char firstChar = digits[0];
         int i = 0;
         long result = 0;
         if (firstChar < '0' || firstChar > '9') {
             if (firstChar == '-') {
-                negtive = true;
+                negative = true;
             } else if (firstChar != '+') {
                 throw new NumberFormatException("Illegal character in " + s);
             }
@@ -41,7 +41,7 @@ public class Str2Int {
                 throw new NumberFormatException(s + " has non numeric character.");
             }
             result = result * 10 + digits[i++] - '0';
-            if (negtive) {
+            if (negative) {
                 if (-result < Integer.MIN_VALUE) {
                     throw new NumberFormatException(s + " is out of bounds.");
                 }
@@ -51,6 +51,6 @@ public class Str2Int {
                 }
             }
         }
-        return negtive ? -(int) result : (int) result;
+        return negative ? -(int) result : (int) result;
     }
 }
