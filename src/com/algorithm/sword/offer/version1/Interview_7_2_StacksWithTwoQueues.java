@@ -1,4 +1,4 @@
-package com.algorithm.sword.offer;
+package com.algorithm.sword.offer.version1;
 
 import java.util.LinkedList;
 import java.util.Queue;

@@ -1,4 +1,4 @@
-package com.algorithm.sword.offer;
+package com.algorithm.sword.offer.version1;
 
 /**
  * @author Kevin Yao

@@ -1,4 +1,4 @@
-package com.algorithm.sword.offer;
+package com.algorithm.sword.offer.version1;
 
 public class Interview_47_AddUseBitCal {
     public static void main(String[] args) {

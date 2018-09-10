@@ -1,8 +1,8 @@
-package com.algorithm.sword.offer;
+package com.algorithm.sword.offer.version1;
 
 import java.util.*;
 
-import static com.algorithm.sword.offer.Interview_29_QuickSort.partition;
+import static com.algorithm.sword.offer.version1.Interview_29_QuickSort.partition;
 
 /**
  * @author Kevin Yao
