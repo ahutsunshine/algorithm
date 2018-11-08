@@ -23,7 +23,7 @@ import java.util.Queue;
  *
  */
 
-public class _110_MinimumDepthOfBinaryTree {
+public class _111_MinimumDepthOfBinaryTree {
     public static void main(String[] args) {
         TreeNode p = new TreeNode(3);
         TreeNode p1 = new TreeNode(9);
