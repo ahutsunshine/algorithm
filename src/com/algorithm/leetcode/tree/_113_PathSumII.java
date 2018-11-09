@@ -65,10 +65,9 @@ public class _113_PathSumII {
         path.add(root.val);
         if (root.left == null && root.right == null && sum == root.val) {
             paths.add(new ArrayList<>(path));
-        } else {
-            getPath(root.left, sum - root.val, path, paths);
-            getPath(root.right, sum - root.val, path, paths);
         }
+        getPath(root.left, sum - root.val, path, paths);
+        getPath(root.right, sum - root.val, path, paths);
         path.remove(path.size() - 1);
     }
 }
