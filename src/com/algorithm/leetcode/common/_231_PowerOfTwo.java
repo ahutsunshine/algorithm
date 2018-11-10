@@ -7,12 +7,12 @@ package com.algorithm.leetcode.common;
  *
  * Input: 1
  * Output: true
- * Explanation: 2的0次方 = 1
+ * Explanation: 2^0 = 1
  * Example 2:
  *
  * Input: 16
  * Output: true
- * Explanation: 2的4次方 = 16
+ * Explanation: 2^4 = 16
  * Example 3:
  *
  * Input: 218
