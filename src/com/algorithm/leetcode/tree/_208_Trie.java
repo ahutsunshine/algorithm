@@ -20,6 +20,8 @@ import java.util.Map;
  *
  * You may assume that all inputs are consist of lowercase letters a-z.
  * All inputs are guaranteed to be non-empty strings.
+ *
+ * Time Complex:O(NL*R)
  */
 public class _208_Trie {
     TrieNode root;
