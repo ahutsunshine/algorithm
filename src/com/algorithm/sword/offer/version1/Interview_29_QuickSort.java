@@ -42,41 +42,22 @@ public class Interview_29_QuickSort {
     }
 
     static int partition(int[] a, int left, int right) {
-        int x = a[left];
-        while (left < right) {
-            //need to add equal sign,or may cause dead cycle
-            while (left < right && a[right] >= x) {
-                right--;
+        int temp = a[left], i = left, j = right;
+        while (i < j) {
+            // need to add equal sign,or may cause dead cycle
+            while (i < j && a[j] >= temp) {
+                j--;
             }
-            if (left < right) {
-                a[left++] = a[right];
+            while (i < j && a[i] <= temp) {
+                i++;
             }
-            while (left < right && a[left] < x) {
-                left++;
-            }
-            if (left < right) {
-                a[right--] = a[left];
+            if (i < j) {
+                swap(a, i, j);
             }
         }
-        a[left] = x;
-        return left;
-    }
-
-    static int partition1(int[] a, int left, int right) {
-        int x = a[left];
-        while (left < right) {
-            //need to add equal sign,or may cause dead cycle
-            while (left < right && a[right] >= x) {
-                right--;
-            }
-            a[left] = a[right];
-            while (left < right && a[left] < x) {
-                left++;
-            }
-            a[right] = a[left];
-        }
-        a[right] = x;
-        return right;
+        a[left] = a[i];
+        a[i] = temp;
+        return i;
     }
 
     static int randomPartition(int[] a, int left, int right) {

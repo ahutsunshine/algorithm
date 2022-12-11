@@ -1,5 +1,8 @@
 package com.algorithm.leetcode.tree;
 
+import java.util.LinkedList;
+import java.util.Queue;
+
 /**
  * Given a binary tree, check whether it is a mirror of itself (ie, symmetric around its center).
  *
@@ -55,4 +58,57 @@ public class _101_SymmetricTree {
         if(p == null || q == null || p.val != q.val) return false;
         return isSymmetric(p.left, q.right) && isSymmetric(p.right, q.left);
     }
+
+    public static boolean isSymmetricNonRecursive(TreeNode root){
+        if (root == null){
+            return true;
+        }
+        Queue<TreeNode> q = new LinkedList<>();
+        q.add(root);
+        q.add(root);
+        while (!q.isEmpty()){
+            TreeNode u = q.poll();
+            TreeNode v = q.poll();
+            if (u == null && v == null){
+                continue;
+            }
+            if (u == null || v == null || u.val != v.val){
+                return false;
+            }
+            q.add(u.left);
+            q.add(v.right);
+
+            q.add(u.right);
+            q.add(v.left);
+        }
+        return true;
+    }
+
+    public boolean isSymmetric1(TreeNode root) {
+        return check(root, root);
+    }
+
+    public boolean check(TreeNode u, TreeNode v) {
+        Queue<TreeNode> q = new LinkedList<TreeNode>();
+        q.offer(u);
+        q.offer(v);
+        while (!q.isEmpty()) {
+            u = q.poll();
+            v = q.poll();
+            if (u == null && v == null) {
+                continue;
+            }
+            if ((u == null || v == null) || (u.val != v.val)) {
+                return false;
+            }
+
+            q.offer(u.left);
+            q.offer(v.right);
+
+            q.offer(u.right);
+            q.offer(v.left);
+        }
+        return true;
+    }
+
 }
